@@ -12,6 +12,7 @@ python-dotenv = "^1.0.0"
 replicate = "^0.15.4"
 pillow = "^10.1.0"
 requests = "^2.31.0"
+pre-commit = "^3.5.0"
 
 
 [build-system]
