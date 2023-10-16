@@ -50,7 +50,7 @@ async def on_message(message):
     if len(message.attachments) > 0:
          if "jpg" in message.attachments[0].filename or "png" in message.attachments[0].filename or "jpeg" in message.attachments[0].filename:
             res = requests.get(message.attachments[0].url)
-            img = BytesIO(res.content)#Image.open(BytesIO(res.content)).convert("RGB")
+            img = BytesIO(res.content)
             res = describe(img)
             await message.reply(res)
 
